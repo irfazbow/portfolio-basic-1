@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <section className="min-h-[90vh] flex flex-col justify-center max-w-4xl mx-auto px-6">
       <div className="space-y-6">
-        <h1 className="text-6xl font-light tracking-tight fade-up mb-20">
+        <h1 className="text-5xl lg:text-6xl font-light tracking-tight fade-up mb-20">
           Software & Material{" "}
           <span className="text-primary-orange">Engineer</span>
         </h1>

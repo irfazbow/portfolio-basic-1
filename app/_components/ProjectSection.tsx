@@ -11,7 +11,7 @@ const ProjectItem = ({ title, category, image }: ProjectItemProps) => {
   return (
     <div className="pb-2 border-b border- border-orange-400">
       <Link href="/projects">
-        <div className="group cursor-pointer h-64 overflow-visible mb-4 relative r">
+        <div className="group cursor-pointer h-64 overflow-visible mb-4 relative">
           <Image
             src={image}
             alt={title}
@@ -46,7 +46,7 @@ const ProjectSection = () => {
     <section id="project" className="py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="border-b border-primary-orange mb-4">
-          <h2 className="text-2xl lg:text-4xl mb-4">
+          <h2 className="text-3xl lg:text-4xl mb-4">
             <span className="text-primary-orange">Projects</span> in Short
           </h2>
           <p className="font-light mb-4">
