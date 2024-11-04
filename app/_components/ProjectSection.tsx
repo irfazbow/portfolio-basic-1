@@ -9,7 +9,7 @@ interface ProjectItemProps {
 
 const ProjectItem = ({ title, category, image }: ProjectItemProps) => {
   return (
-    <div className="pb-2 border-b border- border-orange-400">
+    <div className="pb-2">
       <Link href="/projects">
         <div className="group cursor-pointer h-64 overflow-visible mb-4 relative">
           <Image
@@ -21,9 +21,10 @@ const ProjectItem = ({ title, category, image }: ProjectItemProps) => {
           />
         </div>
       </Link>
-
-      <h3 className="text-lg font-light mb-1">{title}</h3>
-      <p className="text-sm text-zinc-500">{category}</p>
+      <div className="text-center">
+        <h3 className="text-lg font-light mb-1">{title}</h3>
+        <p className="text-sm text-zinc-500">{category}</p>
+      </div>
     </div>
   );
 };

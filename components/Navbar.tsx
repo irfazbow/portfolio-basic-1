@@ -36,7 +36,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           <Link
             href="/"
-            className="text-lg lg:text-2xl font-light tracking-wider text-primary-orange"
+            className="text-lg lg:text-2xl font-extralight tracking-wider text-primary-orange"
           >
             IFP
           </Link>

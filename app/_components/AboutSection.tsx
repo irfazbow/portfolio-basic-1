@@ -47,11 +47,14 @@ const AboutSection = () => {
                       Aerosol deposition, an advanced coating process, to
                       prevent hydrogen diffusion
                     </li>
-                    <li>Differential speed rolling for better strength and toughness</li>
+                    <li>
+                      Differential speed rolling for better strength and
+                      toughness
+                    </li>
                   </ul>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-primary-orange opacity-0 group-hover:opacity-100 transition-opacity">
-                  Find out more about Irfan's education background{" "}
+                  Dive in to learn more of Irfan&apos;s education background{" "}
                   <ArrowRight className="w-4 h-4" />
                 </div>
               </div>
@@ -62,7 +65,7 @@ const AboutSection = () => {
         <div className="max-w-6xl mx-auto">
           <div className="border-b border-primary-orange mb-12">
             <h2 className="text-3xl lg:text-4xl mb-4">
-              <span className="text-gray-500">Selected</span> Professional{" "}
+              Selected Professional{" "}
               <span className="text-primary-orange">Experiences</span>
             </h2>
             <p className="font-light mb-4">
@@ -96,7 +99,7 @@ const AboutSection = () => {
                   </p>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-primary-orange opacity-0 group-hover:opacity-100 transition-opacity">
-                  Discover more <ArrowRight className="w-4 h-4" />
+                  Discover Irfan&apos;s contribution at Cladtek <ArrowRight className="w-4 h-4" />
                 </div>
               </div>
             </Link>
@@ -127,7 +130,7 @@ const AboutSection = () => {
                   </p>
                 </div>
                 <div className="flex items-center gap-2 text-sm text-primary-orange opacity-0 group-hover:opacity-100 transition-opacity">
-                  Discover more <ArrowRight className="w-4 h-4" />
+                  Find out the details of Irfan&apos;s contribution <ArrowRight className="w-4 h-4" />
                 </div>
               </div>
             </Link>
