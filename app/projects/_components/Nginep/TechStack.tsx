@@ -4,6 +4,26 @@ import Image from "next/image";
 const TechStack = () => {
   const technologies = [
     {
+      name: "Java",
+      logoPath: "/projects/logo-java.webp",
+    },
+    {
+      name: "Spring Boot",
+      logoPath: "/projects/logo-springboot.webp",
+    },
+    {
+      name: "PostgreSQL",
+      logoPath: "/projects/logo-postgresql.webp",
+    },
+    {
+      name: "Supabase",
+      logoPath: "/projects/logo-supabase.webp",
+    },
+    {
+      name: "Redis",
+      logoPath: "/projects/logo-redis.webp",
+    },
+    {
       name: "TypeScript",
       logoPath: "/projects/logo-typescript.webp",
     },
@@ -34,8 +54,8 @@ const TechStack = () => {
                   <Image
                     src={tech.logoPath}
                     alt={`${tech.name} logo`}
-                    width={48}
-                    height={48}
+                    width={500}
+                    height={500}
                     className="object-contain"
                   />
                 </div>
@@ -55,8 +75,7 @@ const TechStack = () => {
           <div>
             <ul className="list-disc space-y-2 pl-5">
               <li className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
-                The team members data was stored in a dummy API by deploying a
-                JSON Server to Vercel, and called as API data
+                Redis was used to store and blacklist expired JWT, or blacklisting
               </li>
             </ul>
           </div>
