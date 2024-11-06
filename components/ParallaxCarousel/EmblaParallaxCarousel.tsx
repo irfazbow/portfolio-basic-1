@@ -9,6 +9,7 @@ import {
 } from "embla-carousel";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
+import "@/app/_styles/emblaParallax.css";
 
 type SlideType = {
   src: string;
