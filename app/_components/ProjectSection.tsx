@@ -5,12 +5,13 @@ interface ProjectItemProps {
   title: string;
   category: string;
   image: string;
+  link: string;
 }
 
-const ProjectItem = ({ title, category, image }: ProjectItemProps) => {
+const ProjectItem = ({ title, category, image, link }: ProjectItemProps) => {
   return (
     <div className="pb-2">
-      <Link href="/projects">
+      <Link href={link}>
         <div className="group cursor-pointer h-64 overflow-visible mb-4 relative">
           <Image
             src={image}
@@ -35,11 +36,13 @@ const ProjectSection = () => {
       title: "Outer Wilds Ventures",
       category: "Company Profile",
       image: "/home/project-outerwildsventures.webp",
+      link: "/projects#outerwilds",
     },
     {
       title: "Nginep",
       category: "Property Renting Management",
       image: "/home/project-nginep.webp",
+      link: "/projects#nginep",
     },
   ];
 

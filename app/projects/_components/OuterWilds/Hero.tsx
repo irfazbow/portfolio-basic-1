@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <>
-      <div className="relative w-full h-[500px] overflow-hidden">
+      <div id="outerwilds" className="relative w-full h-[500px] overflow-hidden">
         <Image
           src="/projects/owv-hero.webp"
           alt="Fading Image"
