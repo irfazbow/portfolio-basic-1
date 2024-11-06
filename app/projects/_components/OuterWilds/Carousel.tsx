@@ -17,7 +17,10 @@ const Carousel = () => {
 
   return (
     <>
-      <EmblaParallaxCarousel slides={SLIDES} options={OPTIONS} />
+      <div className="flex justify-center items-center text-lg font-light text-primary-orange">
+        A glimpse of the project
+      </div>
+      <EmblaParallaxCarousel slides={SLIDES} options={OPTIONS} className="p-2 border-2 border-orange-300" />
     </>
   );
 };
