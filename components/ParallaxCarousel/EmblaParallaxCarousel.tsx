@@ -175,7 +175,7 @@ const EmblaParallaxCarousel: React.FC<PropType> = ({
         <div className="flex touch-pan-y">
           {slides.map((slide, index) => (
             <div className="relative flex-[0_0_80%] min-w-0 pl-4" key={index}>
-              <div className="rounded-2xl overflow-hidden h-[300px] lg:h-[400px] 2xl:h-[500px]">
+              <div className="rounded-2xl overflow-hidden h-[300px] lg:h-[400px] 2xl:h-[500px] border-2 border-gray-200">
                 <div className="embla__parallax">
                   <div className="embla__parallax__layer">
                     <Image

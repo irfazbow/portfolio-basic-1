@@ -20,7 +20,7 @@ const Carousel = () => {
       <div className="flex justify-center items-center text-lg font-light text-primary-orange">
         A glimpse of the project
       </div>
-      <EmblaParallaxCarousel slides={SLIDES} options={OPTIONS} className="p-2 border-2 border-orange-300" />
+      <EmblaParallaxCarousel slides={SLIDES} options={OPTIONS} className="overflow-hidden py-4 rounded-2xl border-2 border-orange-300" />
     </>
   );
 };
