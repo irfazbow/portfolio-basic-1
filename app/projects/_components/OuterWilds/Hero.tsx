@@ -38,6 +38,12 @@ export default function Hero() {
           </p>
         </div>
 
+        <div className="mb-4">
+          <p className="text-primary-orange">
+            A Front End Project
+          </p>
+        </div>
+
         <div>
           <ul className="list-disc space-y-2 pl-5 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
             <li>

@@ -42,6 +42,14 @@ export default function Hero() {
             </Link>
           </p>
         </div>
+
+        <div className="mb-4">
+          <p className="text-primary-orange">
+            A Full Stack Project (Back End and Front End)
+          </p>
+        </div>
+
+
         <div>
           <ul className="list-disc space-y-2 pl-5 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
             <li>
@@ -58,7 +66,7 @@ export default function Hero() {
             <li>
               Irfan worked on the back end and front end, focusing on the
               following features:
-              <ul className="list-disc space-y-2 pl-5 py-2 text-sm font-light text-gray-700 dark:text-gray-300 leading-relaxed">
+              <ul className="list-disc space-y-2 pl-5 py-2 text-sm font-light text-gray-800 dark:text-gray-300 leading-relaxed">
                 <li>
                   The{" "}
                   <span className="text-primary-orange">
