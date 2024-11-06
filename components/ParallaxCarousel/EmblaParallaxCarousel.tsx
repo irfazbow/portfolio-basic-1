@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useCallback, useEffect, useRef } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
+import AutoScroll from "embla-carousel-auto-scroll";
 import {
   EmblaCarouselType,
   EmblaEventType,
@@ -33,23 +34,51 @@ const EmblaParallaxCarousel: React.FC<PropType> = ({
   showArrows = true,
   showDots = true,
 }) => {
-  const [emblaRef, emblaApi] = useEmblaCarousel(options);
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [
+    AutoScroll({
+      playOnInit: true,
+      stopOnInteraction: true,
+      startDelay: 5000,
+      rootNode: (emblaRoot) => emblaRoot.parentElement,
+    }),
+  ]);
+
   const tweenFactor = useRef(0);
   const tweenNodes = useRef<HTMLElement[]>([]);
 
   const [selectedIndex, setSelectedIndex] = React.useState(0);
   const [scrollSnaps, setScrollSnaps] = React.useState<number[]>([]);
 
-  const scrollPrev = useCallback(
-    () => emblaApi && emblaApi.scrollPrev(),
-    [emblaApi]
-  );
-  const scrollNext = useCallback(
-    () => emblaApi && emblaApi.scrollNext(),
-    [emblaApi]
-  );
+  const scrollPrev = useCallback(() => {
+    if (!emblaApi) return;
+    const autoScroll = emblaApi.plugins()?.autoScroll;
+    if (!autoScroll) return;
+
+    autoScroll.stop();
+    emblaApi.scrollPrev();
+    setTimeout(() => autoScroll.play(), 5000);
+  }, [emblaApi]);
+
+  const scrollNext = useCallback(() => {
+    if (!emblaApi) return;
+    const autoScroll = emblaApi.plugins()?.autoScroll;
+    if (!autoScroll) return;
+
+    autoScroll.stop();
+    emblaApi.scrollNext();
+    setTimeout(() => autoScroll.play(), 5000);
+  }, [emblaApi]);
+
   const scrollTo = useCallback(
-    (index: number) => emblaApi && emblaApi.scrollTo(index),
+    (index: number) => {
+      if (!emblaApi) return;
+      const autoScroll = emblaApi.plugins()?.autoScroll;
+      if (!autoScroll) return;
+
+      autoScroll.stop();
+      emblaApi.scrollTo(index);
+      setTimeout(() => autoScroll.play(), 5000);
+    },
     [emblaApi]
   );
 
@@ -145,10 +174,7 @@ const EmblaParallaxCarousel: React.FC<PropType> = ({
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex touch-pan-y">
           {slides.map((slide, index) => (
-            <div
-              className="relative flex-[0_0_80%] min-w-0 pl-4"
-              key={index}
-            >
+            <div className="relative flex-[0_0_80%] min-w-0 pl-4" key={index}>
               <div className="rounded-2xl overflow-hidden h-[300px] lg:h-[400px] 2xl:h-[500px]">
                 <div className="embla__parallax">
                   <div className="embla__parallax__layer">
