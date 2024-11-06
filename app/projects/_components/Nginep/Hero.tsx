@@ -12,7 +12,7 @@ export default function Hero() {
           height={1500}
           className="absolute top-0 left-0 w-full h-full object-cover object-left"
         />
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent to-black"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent from-0% via-black/65 via-50% to-black"></div>
         <div className="absolute top-0 right-4 sm:right-0 w-3/4 sm:w-1/2 h-full p-8 flex flex-col justify-start items-start">
           <h2 className="text-3xl text-primary-orange font-medium mt-4">
             Project Nginep
@@ -48,7 +48,6 @@ export default function Hero() {
             A Full Stack Project (Back End and Front End)
           </p>
         </div>
-
 
         <div>
           <ul className="list-disc space-y-2 pl-5 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
