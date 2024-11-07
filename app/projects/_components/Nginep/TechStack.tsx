@@ -24,6 +24,10 @@ const TechStack = () => {
       logoPath: "/projects/logo-redis.webp",
     },
     {
+      name: "Midtrans",
+      logoPath: "/projects/logo-midtrans.webp",
+    },
+    {
       name: "TypeScript",
       logoPath: "/projects/logo-typescript.webp",
     },
@@ -73,9 +77,47 @@ const TechStack = () => {
             </p>
           </div>
           <div>
-            <ul className="list-disc space-y-2 pl-5">
-              <li className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
-                Redis was used to store and blacklist expired JWT, or blacklisting
+            <ul className="list-disc space-y-2 pl-5 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+              <li>
+                <span className="text-primary-orange">
+                  {" "}
+                  <a href="https://redis.io/" target="_blank">
+                    Redis
+                  </a>
+                </span>{" "}
+                was used to store and blacklist expired JWT, or blacklisting
+              </li>
+              <li>
+                <span className="text-primary-orange">
+                  {" "}
+                  <a href="https://midtrans.com/en" target="_blank">
+                    Midtrans
+                  </a>
+                </span>{" "}
+                was used for the automatic payment system
+              </li>
+
+              <li>
+                <span className="text-primary-orange">
+                  <a
+                    href="https://developers.google.com/gmail/imap/imap-smtp"
+                    target="_blank"
+                  >
+                    Google SMTP
+                  </a>
+                </span>{" "}
+                was used to deliver automatic email when a certain function is
+                executed
+              </li>
+
+              <li>
+                <span className="text-primary-orange">
+                  <a href="https://tanstack.com/query/v3" target="_blank">
+                    React Query
+                  </a>
+                </span>{" "}
+                was utilized as server state management and with the assistance
+                of Axios
               </li>
             </ul>
           </div>
