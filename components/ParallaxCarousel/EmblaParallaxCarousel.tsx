@@ -37,7 +37,7 @@ const EmblaParallaxCarousel: React.FC<PropType> = ({
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [
     AutoScroll({
       playOnInit: true,
-      stopOnInteraction: true,
+      stopOnInteraction: false,
       startDelay: 5000,
       rootNode: (emblaRoot) => emblaRoot.parentElement,
     }),
