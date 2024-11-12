@@ -29,12 +29,13 @@ const Hero = () => {
           </div>
 
           <h1 className="text-xl sm:text-2xl font-medium mx-auto sm:mx-0">
-            Hi, there! It's <span className="text-primary-orange">Irfan</span>
+            Hi, there! It&apos;s{" "}
+            <span className="text-primary-orange">Irfan</span>
           </h1>
 
           <p className="text-sm sm:text-base text-justify leading-relaxed max-w-4xl">
             <span className="text-primary-orange">Tinkering</span> with gadgets
-            has been Irfan's passion since junior high school. From{" "}
+            has been Irfan&apos;s passion since junior high school. From{" "}
             <span className="text-primary-orange">
               dismantling keyboards, mice, robots, computers, and laptops
             </span>{" "}
