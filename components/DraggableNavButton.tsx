@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, useMotionValue } from "framer-motion";
 
@@ -21,6 +21,24 @@ const DraggableNavButton = ({
   const y = useMotionValue(0);
   const [isDragging, setIsDragging] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [constraints, setConstraints] = useState({ top: 30, bottom: 600 });
+
+  useEffect(() => {
+    setConstraints({
+      top: 30,
+      bottom: window.innerHeight - 200,
+    });
+
+    const handleResize = () => {
+      setConstraints({
+        top: 30,
+        bottom: window.innerHeight - 200,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <>
@@ -75,8 +93,8 @@ const DraggableNavButton = ({
           dragConstraints={{
             left: 10,
             right: 10,
-            top: 30,
-            bottom: window.innerHeight - 200,
+            top: constraints.top,
+            bottom: constraints.bottom,
           }}
           dragElastic={0.2}
           dragMomentum={false}
