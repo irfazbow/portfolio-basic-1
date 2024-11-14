@@ -81,7 +81,11 @@ const TechStack = () => {
               <li>
                 <span className="text-primary-orange">
                   {" "}
-                  <a href="https://redis.io/" target="_blank">
+                  <a
+                    href="https://redis.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Redis
                   </a>
                 </span>{" "}
@@ -90,7 +94,11 @@ const TechStack = () => {
               <li>
                 <span className="text-primary-orange">
                   {" "}
-                  <a href="https://midtrans.com/en" target="_blank">
+                  <a
+                    href="https://midtrans.com/en"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Midtrans
                   </a>
                 </span>{" "}
@@ -102,6 +110,7 @@ const TechStack = () => {
                   <a
                     href="https://developers.google.com/gmail/imap/imap-smtp"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     Google SMTP
                   </a>
@@ -112,7 +121,11 @@ const TechStack = () => {
 
               <li>
                 <span className="text-primary-orange">
-                  <a href="https://tanstack.com/query/v3" target="_blank">
+                  <a
+                    href="https://tanstack.com/query/v3"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     React Query
                   </a>
                 </span>{" "}

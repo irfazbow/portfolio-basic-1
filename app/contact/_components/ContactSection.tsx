@@ -11,7 +11,6 @@ import {
 import { Button } from "@/components/ui/button";
 import { Mail, Linkedin, Copy, MapPin, ExternalLink } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import Link from "next/link";
 
 export const ContactSection = () => {
   const { toast } = useToast();

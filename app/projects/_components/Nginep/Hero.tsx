@@ -5,41 +5,41 @@ export default function Hero() {
   return (
     <>
       <div id="nginep" className="relative w-full h-[500px] overflow-hidden">
-        <Image
-          src="/projects/nginep-hero.webp"
-          alt="Fading Image"
-          width={1500}
-          height={1500}
-          className="absolute top-0 left-0 w-full h-full object-cover object-left"
-        />
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent from-0% via-black/65 via-50% to-black"></div>
-        <div className="absolute top-0 right-4 sm:right-0 w-3/4 sm:w-1/2 h-full p-8 flex flex-col justify-start items-start">
-          <h2 className="text-3xl text-primary-orange font-medium mt-4">
-            Project Nginep
-          </h2>
-          <div className="">
-            <p className="text-lg text-gray-300 font-semibold my-4">
-              Renting Property Management Website
-            </p>
-            <p className="hidden sm:block text-base text-justify text-gray-300">
-              Developed with back end and front end by using Java and
-              TypeScript, respectively. Mainly inspired by
-              <Link href="https://www.airbnb.com/" target="_blank">
-                <span className=""> Airbnb</span>.
-              </Link>
-            </p>
+        <a
+          href="https://nginep-frontend.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/projects/nginep-hero.webp"
+            alt="Fading Image"
+            width={1500}
+            height={1500}
+            className="absolute top-0 left-0 w-full h-full object-cover object-left"
+          />
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent from-0% via-black/65 via-50% to-black"></div>
+          <div className="absolute top-0 right-4 sm:right-0 w-3/4 sm:w-1/2 h-full p-8 flex flex-col justify-start items-start">
+            <h2 className="text-3xl text-primary-orange font-medium mt-4">
+              Project Nginep
+            </h2>
+            <div className="">
+              <p className="text-lg text-gray-300 font-semibold my-4">
+                Renting Property Management Website
+              </p>
+              <p className="hidden sm:block text-base text-justify text-gray-300">
+                Developed with back end and front end by using Java and
+                TypeScript, respectively. Mainly inspired by Airbnb.
+              </p>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
 
       <div className="p-4 lg:p-8">
         <div className="block mb-4 sm:hidden">
           <p className="text-base text-justify text-gray-800">
             Developed with back end and front end by using Java and TypeScript,
-            respectively. Mainly inspired by
-            <Link href="https://www.airbnb.com/" target="_blank">
-              <span className=""> Airbnb</span>.
-            </Link>
+            respectively. Mainly inspired by Airbnb.
           </p>
         </div>
 
@@ -53,13 +53,21 @@ export default function Hero() {
           <ul className="list-disc space-y-2 pl-5 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
             <li>
               The project was made by{" "}
-              <Link href="https://github.com/irfazbow" target="_blank">
+              <a
+                href="https://github.com/irfazbow"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span className="text-primary-orange"> Irfan</span>
-              </Link>{" "}
+              </a>{" "}
               and{" "}
-              <Link href="https://github.com/Yosef1997" target="_blank">
+              <a
+                href="https://github.com/Yosef1997"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span className="text-primary-orange"> Yosef</span>
-              </Link>
+              </a>
               , with each having their own features and tasks
             </li>
             <li>
@@ -117,14 +125,14 @@ export default function Hero() {
           </ul>
         </div>
         <div className="mt-4">
-          <Link
+          <a
             href="https://nginep-frontend.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm border-b border-primary-orange hover:text-primary-orange"
           >
             Let&apos;s try and simulate to reserve a room at Nginep!
-          </Link>
+          </a>
         </div>
       </div>
     </>

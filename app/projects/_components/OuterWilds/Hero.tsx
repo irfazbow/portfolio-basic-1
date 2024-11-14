@@ -8,29 +8,35 @@ export default function Hero() {
         id="outerwilds"
         className="relative w-full h-[500px] overflow-hidden"
       >
-        <Image
-          src="/projects/owv-hero.webp"
-          alt="Fading Image"
-          width={1500}
-          height={1500}
-          className="absolute top-0 left-0 w-full h-full object-cover object-left"
-        />
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent from-0% via-black/65 via-50% to-black"></div>
-        <div className="absolute top-0 right-4 sm:right-0 w-3/4 sm:w-1/2 h-full p-8 flex flex-col justify-start items-start">
-          <h2 className="text-3xl text-primary-orange font-medium mt-4">
-            Project Outer Wilds
-          </h2>
-          <div className="">
-            <p className="text-lg text-gray-300 font-semibold my-4">
-              {" "}
-              Company Profile of Outer Wilds Ventures
-            </p>
-            <p className="hidden sm:block text-base text-justify text-gray-300">
-              Inspired from the Outer Wilds video game (2020), developed by
-              Mobius Digital and published by Annapurna Interactive
-            </p>{" "}
+        <a
+          href="https://owventures-cpy-profile.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/projects/owv-hero.webp"
+            alt="Fading Image"
+            width={1500}
+            height={1500}
+            className="absolute top-0 left-0 w-full h-full object-cover object-left"
+          />
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent from-0% via-black/65 via-50% to-black"></div>
+          <div className="absolute top-0 right-4 sm:right-0 w-3/4 sm:w-1/2 h-full p-8 flex flex-col justify-start items-start">
+            <h2 className="text-3xl text-primary-orange font-medium mt-4">
+              Project Outer Wilds
+            </h2>
+            <div className="">
+              <p className="text-lg text-gray-300 font-semibold my-4">
+                {" "}
+                Company Profile of Outer Wilds Ventures
+              </p>
+              <p className="hidden sm:block text-base text-justify text-gray-300">
+                Inspired from the Outer Wilds video game (2020), developed by
+                Mobius Digital and published by Annapurna Interactive
+              </p>{" "}
+            </div>
           </div>
-        </div>
+        </a>
       </div>
 
       <div className="p-4 lg:p-8">
@@ -54,9 +60,13 @@ export default function Hero() {
             </li>
             <li>
               Sketches and illustrations on the website belongs to
-              <Link href="https://www.artstation.com/skings" target="_blank">
+              <a
+                href="https://www.artstation.com/skings"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span className="text-primary-orange"> Sebastian Kings</span>
-              </Link>
+              </a>
             </li>
             <li>
               Images from the game are taken from the Outer Wilds video game
@@ -65,14 +75,14 @@ export default function Hero() {
         </div>
 
         <div className="mt-4">
-          <Link
+          <a
             href="https://owventures-cpy-profile.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm border-b border-primary-orange hover:text-primary-orange"
           >
             Dive in and explore the company profile here!
-          </Link>
+          </a>
         </div>
       </div>
     </>
