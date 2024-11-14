@@ -21,8 +21,7 @@ const experienceData: ExperienceItem[] = [
     achievements: [
       "Analyzed and resolved technical issues by providing deviation/query requests and formal letter confirmations",
       "Managed to handle engineering and technical documents for 4 mechanically lined pipe (MLP) projects simultaneously, along with 3 future projects and sub-projects (weld overlay pipes and hot induction bends)",
-      "Specialized in mechanically lined pipe manufacturing processes and standards",
-      "Collaborated with project teams to ensure compliance with related standards, such as the client specifications, API 5L, 5LD, 5LC, ASME B16.49, and ISO 15590-1",
+      "Knowledge of process, details, and technicality in mechanically lined pipe manufacturing",
       "Redefined the manufacturing procedure specification (MPS) for MLP manufacturing, through collaborative communication with Brazil's engineering and production team",
       "Communicated with the software engineering team to further optimize the digitalization of the manufacturing processes, emphasized on the technical documents",
     ],
@@ -36,9 +35,9 @@ const experienceData: ExperienceItem[] = [
     achievements: [
       "Prepared technical documents including MPS, ITP, BOM, PDL, and technical queries",
       "Provided technical advice and support for manufacturing processes",
-      "Developed expertise in weld overlay and hot induction bends manufacturing",
+      "Knowledge of process, details, and technicality in weld overlay and hot induction bends manufacturing",
       "Successfully managed critical mechanically lined pipe projects",
-      "Ensured compliance with international standards and specifications",
+      "Familiarity with standards/codes of API 5L, 5LD, 5LC, ASME B16.49, ISO 15590-1",
     ],
   },
   {
@@ -48,9 +47,8 @@ const experienceData: ExperienceItem[] = [
     period: "September 2020 - August 2022",
     logo: "/about/education-yeungnam.webp",
     achievements: [
-      "Managed 4 key projects: differential speed rolling, hydrogen embrittlement, aerosol deposition, and atomic layer deposition",
-      "Created and maintained efficient systems for research data organization and analysis",
-      "Generated representative graphs and charts for research presentations",
+      "Managed 4 projects: differential speed rolling, hydrogen embrittlement, aerosol deposition, and atomic layer deposition",
+      "Created and maintained efficient systems using Microsoft Excel for research data organization and analysis, and automatic graph or chart generation based on the data",
       "Collaborated with 5 different laboratories on various research initiatives",
       "Contributed to research publications and technical presentations",
     ],
@@ -63,10 +61,7 @@ const experienceData: ExperienceItem[] = [
     logo: "/about/experience-pitjarus.webp",
     achievements: [
       "Collected and identified training data for image recognition systems",
-      "Analyzed and corrected data train errors",
-      "Improved detection accuracy from approximately 60% to 95%",
-      "Contributed to the development of machine learning models",
-      "Collaborated with the data science team to optimize data quality",
+      "Analyzed and corrected data train errors to improve detection accuracy from ~60% to ~95%",
     ],
   },
 ];

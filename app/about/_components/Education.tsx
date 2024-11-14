@@ -22,14 +22,15 @@ const educationData: EducationItem[] = [
     subtitle1: "Learning on Campus | March 2024 – June 2024",
     subtitle2: "Final Project From Home | August 2024 – October 2024",
     description:
-      "Projects: Company Profile, Event Management Website, Property Renting Management Website",
+      "Projects: Company Profile, Property Renting Management Website",
     logo: "/about/education-purwadhika.webp",
     achievements: [
-      "Learned back-end development with Java, Spring Boot, and PostgreSQL",
+      "Back-end development with Java, Spring Boot, and PostgreSQL",
+      "Front-end development with TypeScript, React, Next.js, and Tailwind CSS",
       "Trained in designing and implementing database systems",
-      "Developed front-end applications using TypeScript, React, Next.js, and Tailwind CSS",
       "Built RESTful APIs and implemented authentication/authorization systems",
       "Practiced version control with Git and collaborative development workflows",
+      "Deployed projects on Google Cloud Platform and Vercel",
     ],
   },
   {
@@ -41,11 +42,11 @@ const educationData: EducationItem[] = [
     gpa: "GPA: 4.40 / 4.50",
     logo: "/about/education-yeungnam.webp",
     achievements: [
-      "Conducted research on hydrogen embrittlement in austenitic stainless steels, ferritic stainless steels, and high and medium Mn steels, ",
+      "Conducted research on hydrogen embrittlement in austenitic stainless steels, ferritic stainless steels, and high and medium Mn steels",
       "Analyzed hydrogen diffusivity in metallic materials",
       "Investigated aerosol deposition coating processes on steels for hydrogen diffusivity",
       "Performed differential speed rolling experiments and analysis",
-      "Managed to perform SEM, XRD, tensile test, hardness test, hydrogen diffusivity, surface roughness, etc",
+      "Managed to self perform SEM, XRD, tensile test, hardness test, hydrogen charging, hydrogen diffusivity, surface roughness, etc",
     ],
   },
   {
@@ -57,9 +58,9 @@ const educationData: EducationItem[] = [
     gpa: "GPA: 3.24 / 4.00",
     logo: "/about/education-ui.webp",
     achievements: [
-      "Researched focused on welding, mechanical properties, and microstructural analysis",
-      "Performed microstructural analysis image through papers",
-      "Welding through FCAW produced acicular ferrite to toughen up the material",
+      "Researches focused on welding, mechanical properties, and microstructural analysis",
+      "Performed microstructural analysis image through academic papers",
+      "The final weld metal through FCAW produced acicular ferrite to toughen up the material",
     ],
   },
 ];
